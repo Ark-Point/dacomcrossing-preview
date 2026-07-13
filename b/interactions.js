@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const copy = storyPanel.lastElementChild;
     const assetRoot = image.src.slice(0, image.src.lastIndexOf('/') + 1);
     const stories = [
-      ['2001','합작 인프라 회사 설립','LG U+ 전신 데이콤과 글로벌 케이블 사업자의 합작으로 출발했습니다.','business-meeting.jpg'],
-      ['2002','EAC 백홀과 태안 육양국','국제 해저케이블이 한국에 도착하는 핵심 운영 자산을 확보했습니다.','fiber-cables.jpg'],
-      ['2015','Telstra 운영 체계 연계','글로벌 NOC/GSD와 연결된 국제회선 장애 대응 체계를 강화했습니다.','noc-monitoring.jpg'],
-      ['2025','AIDC와 대용량 트래픽','11.5T 백홀과 중립 소싱으로 AI 데이터센터 연결 수요에 대응합니다.','datacenter-server-room.jpg']
+      ['2001','합작 인프라 회사 설립','LG U+ 전신 데이콤과 글로벌 케이블 사업자의 합작으로 출발했습니다.','business-collaboration.jpg'],
+      ['2002','EAC 백홀과 태안 육양국','국제 해저케이블이 한국에 도착하는 핵심 운영 자산을 확보했습니다.','coastline-aerial.jpg'],
+      ['2015','Telstra 운영 체계 연계','글로벌 NOC/GSD와 연결된 국제회선 장애 대응 체계를 강화했습니다.','operations-control-room.jpg'],
+      ['2025','AIDC와 대용량 트래픽','11.5T 백홀과 중립 소싱으로 AI 데이터센터 연결 수요에 대응합니다.','data-aisle-blue.jpg']
     ];
     const selectStory = function (index, focus) {
       storyTabs.forEach(function (tab, i) { tab.setAttribute('aria-selected', String(i === index)); tab.tabIndex = i === index ? 0 : -1; });
