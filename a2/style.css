@@ -116,3 +116,54 @@ html{scroll-padding-top:86px}
   .a2-localnav a{font-size:11px}
   .a2-subhero-mark{font-size:60px;margin-top:26px;opacity:.75}
 }
+
+/* Concept A visual-system lock: A2 keeps new content and palette only */
+:root{--gutter:50px;--max:1920px}
+body{font-size:17px;font-weight:300;line-height:26px}
+.a2-grid{column-gap:30px}
+.a2-header{height:100px}.a2-header.is-compact{height:68px}
+.a2-logo{font-size:19px;line-height:17px}
+.a2-nav{gap:27px}.a2-nav a{font-size:17px;font-weight:300}
+.a2-header-cta{font-size:15px;font-weight:500}
+.eyebrow{font-size:17px;font-weight:300;letter-spacing:0;text-transform:none}
+.a2-hero{min-height:700px;padding-top:100px}
+.a2-hero-grid{min-height:590px;padding-block:55px 70px}
+.a2-hero h1{font-size:36px;font-weight:600;letter-spacing:0;line-height:48px;margin:22px 0}
+.a2-hero-lead{font-size:17px;line-height:26px;max-width:560px}
+.a2-button{font-size:16px;font-weight:500}
+.a2-hero-visual{min-height:460px}.a2-hero-visual img{height:440px}
+.a2-proof{min-height:138px;padding:26px 30px}.a2-proof strong{font-size:24px;font-weight:600;letter-spacing:0;line-height:32px}.a2-proof span{font-size:14px;font-weight:500}
+.a2-section{padding-block:110px}
+.a2-section-head h2,.a2-subhero h1,.a2-feature-copy h2,.a2-detail-copy h2,.a2-contact-info h2,.a2-cta h2{font-size:36px;font-weight:600;letter-spacing:0;line-height:48px}
+.a2-section-head p,.a2-feature-copy p,.a2-subhero p{font-size:17px;line-height:26px}
+.a2-system-copy h3{font-size:24px;font-weight:600;letter-spacing:0;line-height:32px}
+.a2-card-body h3,.a2-step h3,.a2-service h3,.a2-partner-row h3{font-size:24px;font-weight:600;letter-spacing:0;line-height:32px}
+.a2-card-body small,.a2-step b,.a2-service .num{font-size:14px;letter-spacing:0;text-transform:none}
+.a2-subhero{padding-block:200px 100px}.a2-subhero-copy{grid-column:3/span 8;max-width:803px}.a2-subhero-mark{display:none}
+.a2-localnav a{font-size:14px;font-weight:300}
+.a2-detail{padding-block:80px}.a2-detail-copy>p{font-size:17px;line-height:26px}
+.a2-placeholder h3{font-size:24px;font-weight:600;line-height:32px}
+.a2-year strong,.a2-metric strong{font-size:30px;font-weight:600;letter-spacing:0;line-height:40px}
+.a2-footer h2{font-size:24px;font-weight:600;letter-spacing:0;line-height:32px}
+@media(max-width:1199px){:root{--gutter:32px}.a2-grid{column-gap:22px}.a2-subhero-copy{grid-column:2/span 9}}
+@media(max-width:760px){
+  :root{--gutter:20px}
+  body{font-size:16px;line-height:25px}
+  .a2-grid{column-gap:14px}
+  .a2-header,.a2-header.is-compact{height:68px}
+  .a2-hero{padding-top:68px}
+  .a2-hero h1,.a2-section-head h2,.a2-subhero h1,.a2-feature-copy h2,.a2-detail-copy h2,.a2-contact-info h2,.a2-cta h2{font-size:30px;line-height:40px}
+  .a2-hero-lead,.a2-section-head p,.a2-feature-copy p,.a2-subhero p{font-size:16px;line-height:25px}
+  .a2-hero-grid{padding-block:50px 80px}
+  .a2-hero-visual img{height:320px}
+  .a2-section{padding-block:80px}
+  .a2-subhero{padding-block:130px 70px}.a2-subhero-copy{grid-column:1/span 6}
+  .a2-card-body h3,.a2-step h3,.a2-service h3,.a2-partner-row h3{font-size:22px;line-height:30px}
+}
+
+/* Concept A body-size completion */
+.a2-card-body p,.a2-step p,.a2-year p,.a2-service p,.a2-service li,.a2-partner-row p,.a2-system-copy p,.a2-side-note,.a2-placeholder p{font-size:17px;line-height:26px}
+@media(max-width:760px){
+  body.menu-open{padding-top:300px}
+  .a2-card-body p,.a2-step p,.a2-year p,.a2-service p,.a2-service li,.a2-partner-row p,.a2-system-copy p,.a2-side-note,.a2-placeholder p{font-size:16px;line-height:25px}
+}
