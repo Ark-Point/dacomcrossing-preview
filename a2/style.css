@@ -1,10 +1,12 @@
 :root{
+  --telstra-blue:#0d54ff;
+  --lgu-magenta:#e6007e;
   --blue:#1647d8;
   --blue-deep:#08215e;
   --blue-night:#06183f;
   --blue-soft:#eaf1ff;
   --sea:#bcdff2;
-  --pink:#d62d78;
+  --pink:var(--lgu-magenta);
   --ink:#10182b;
   --muted:#5b6578;
   --line:#d9dfeb;
@@ -167,3 +169,55 @@ body{font-size:17px;font-weight:300;line-height:26px}
   body.menu-open{padding-top:300px}
   .a2-card-body p,.a2-step p,.a2-year p,.a2-service p,.a2-service li,.a2-partner-row p,.a2-system-copy p,.a2-side-note,.a2-placeholder p{font-size:16px;line-height:25px}
 }
+
+/* A2 editorial refinement: official signals, Concept A central columns */
+.a2-nav a:after{background:var(--telstra-blue)}
+.eyebrow,.a2-hero h1 em,.a2-card-body a,.a2-fact strong{color:var(--telstra-blue)}
+.a2-hero-copy{grid-column:3/span 5;padding-right:0}
+.a2-hero-visual{grid-column:9/span 4}
+.a2-proof-grid{grid-column:3/span 10}
+.a2-section-head{grid-column:3/span 5}.a2-section-head.wide{grid-column:3/span 7}
+.a2-side-note{grid-column:10/span 3}
+.a2-system-copy{grid-column:3/span 4}.a2-system-map{grid-column:8/span 5}
+.a2-card-grid,.a2-process,.a2-logos,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row{grid-column:3/span 10}
+.a2-feature-media{grid-column:3/span 5}.a2-feature-copy{grid-column:9/span 4}
+.a2-localnav-inner{grid-column:3/span 10}
+.a2-detail-copy{grid-column:3/span 5;padding-left:0;position:relative}
+.a2-detail-copy:before{background:var(--lgu-magenta);content:"";height:4px;left:-45px;position:absolute;top:12px;width:30px}
+.a2-detail-media{box-shadow:0 20px 48px rgba(8,33,94,.12);grid-column:9/span 4;position:relative}
+.a2-detail-media img{height:340px}
+.a2-media-caption{border-top:4px solid var(--telstra-blue);padding:19px 22px}
+.a2-placeholder{border-top:4px solid var(--telstra-blue);min-height:430px}
+.a2-bullets li:before{background:var(--lgu-magenta)}
+.a2-contact-info{grid-column:3/span 4}.a2-form{box-shadow:0 20px 48px rgba(8,33,94,.08);grid-column:8/span 5}
+.a2-footer-main{grid-column:3/span 6}.a2-footer-info{grid-column:10/span 3}.a2-footer-legal{grid-column:3/span 10}
+.a2-cta{background:linear-gradient(135deg,#fff 0%,var(--blue-soft) 100%);color:var(--ink);padding-block:110px}
+.a2-cta-copy{border-top:4px solid var(--lgu-magenta);grid-column:3/span 6;padding-top:26px}
+.a2-cta p{color:var(--muted)}
+.a2-cta .a2-button{align-items:flex-end;align-self:stretch;background:var(--blue-night);border:0;color:#fff;grid-column:10/span 3;justify-content:space-between;min-height:170px;padding:30px;position:relative}
+.a2-cta .a2-button:before{color:#8fa9ed;content:"ROUTE REVIEW";font-size:12px;font-weight:600;letter-spacing:.12em;position:absolute;right:30px;top:27px}
+.a2-cta .a2-button:hover{background:var(--telstra-blue);color:#fff}
+.a2-subhero{border-bottom:1px solid var(--line)}
+.a2-localnav{background:rgba(246,248,252,.97);box-shadow:0 12px 30px rgba(8,33,94,.06)}
+.a2-detail:nth-of-type(odd){background:#fff}.a2-detail:nth-of-type(even){background:var(--paper)}
+@media(max-width:1199px){
+  .a2-grid{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:22px}
+  .a2-hero-copy{grid-column:2/span 5}.a2-hero-visual{grid-column:8/span 4}.a2-proof-grid{grid-column:2/span 10}
+  .a2-section-head{grid-column:2/span 5}.a2-section-head.wide{grid-column:2/span 7}.a2-side-note{grid-column:10/span 2}
+  .a2-system-copy{grid-column:2/span 4}.a2-system-map{grid-column:7/span 5}
+  .a2-card-grid,.a2-process,.a2-logos,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row{grid-column:2/span 10}
+  .a2-feature-media{grid-column:2/span 5}.a2-feature-copy{grid-column:8/span 4}
+  .a2-localnav-inner{grid-column:2/span 10}.a2-detail-copy{grid-column:2/span 5}.a2-detail-media{grid-column:8/span 4}
+  .a2-contact-info{grid-column:2/span 5}.a2-form{grid-column:8/span 4}
+  .a2-cta-copy{grid-column:2/span 6}.a2-cta .a2-button{grid-column:9/span 3}
+  .a2-footer-main{grid-column:2/span 6}.a2-footer-info{grid-column:9/span 3}.a2-footer-legal{grid-column:2/span 10}
+}
+@media(max-width:760px){
+  .a2-hero-copy,.a2-hero-visual,.a2-proof-grid,.a2-section-head,.a2-section-head.wide,.a2-side-note,.a2-system-copy,.a2-system-map,.a2-card-grid,.a2-feature-media,.a2-feature-copy,.a2-process,.a2-logos,.a2-localnav-inner,.a2-detail-copy,.a2-detail-media,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row,.a2-contact-info,.a2-form,.a2-cta-copy,.a2-cta .a2-button,.a2-footer-main,.a2-footer-info,.a2-footer-legal{grid-column:1/span 6}
+  .a2-detail-copy:before{left:0;top:-22px;width:28px}
+  .a2-detail-media img{height:300px}
+  .a2-cta{padding-block:80px}.a2-cta .a2-button{margin-top:38px;min-height:145px;width:100%}
+}
+
+/* Mobile column reset after desktop central-column overrides */
+@media(max-width:760px){.a2-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
