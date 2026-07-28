@@ -296,3 +296,12 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 
 /* Keep technical reference images legible instead of forcing landscape sources into portrait crops */
 .a2-detail-media:not(.diagram) img{aspect-ratio:4/3;height:auto;object-fit:cover}
+
+/* Compact history: only service-foundation milestones */
+.a2-history-compact{grid-column:3/span 10;list-style:none;margin:58px 0 0;padding:0}
+.a2-history-compact li{border-top:1px solid var(--line);display:grid;gap:30px;grid-template-columns:150px 1fr;padding:27px 0}
+.a2-history-compact time{color:var(--blue);font-size:18px;font-weight:700}
+.a2-history-compact h3{color:var(--blue-deep);font-size:20px;font-weight:600;margin:0 0 7px}
+.a2-history-compact p{color:var(--muted);font-size:15px;line-height:1.65;margin:0}
+@media(max-width:1199px){.a2-history-compact{grid-column:2/span 10}}
+@media(max-width:760px){.a2-history-compact{grid-column:1/span 6;margin-top:42px}.a2-history-compact li{gap:18px;grid-template-columns:82px 1fr;padding:23px 0}.a2-history-compact time{font-size:14px}.a2-history-compact h3{font-size:18px}}
