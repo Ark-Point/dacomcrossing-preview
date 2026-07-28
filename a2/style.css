@@ -79,7 +79,7 @@ img{display:block;max-width:100%}
 .a2-card img{height:100%;object-fit:cover;width:100%}.a2-card-body{padding:30px}.a2-card-body small{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.a2-card-body h3{font-size:25px;letter-spacing:-.03em;line-height:1.25;margin:14px 0}.a2-card-body p{color:var(--muted);font-size:15px;margin:0}.a2-card-body a{color:var(--blue);display:inline-block;font-size:14px;font-weight:800;margin-top:22px}
 .a2-feature{align-items:center}
 .a2-feature-media{grid-column:1/span 7;position:relative}.a2-feature-media img{height:610px;object-fit:cover;width:100%}.a2-feature-label{background:var(--pink);bottom:30px;color:#fff;font-size:12px;font-weight:800;letter-spacing:.1em;padding:10px 14px;position:absolute;right:-1px;text-transform:uppercase}
-.a2-feature-copy{grid-column:9/span 5}.a2-feature-copy h2{font-size:clamp(38px,4vw,58px);letter-spacing:-.05em;line-height:1.14;margin:22px 0}.a2-feature-copy p{color:var(--muted);font-size:18px}.a2-facts{display:grid;gap:0;margin-top:30px}.a2-fact{border-top:1px solid var(--line);display:grid;gap:16px;grid-template-columns:95px 1fr;padding:17px 0}.a2-fact strong{color:var(--blue);font-size:13px}.a2-fact span{font-size:15px}
+.a2-feature-copy{grid-column:9/span 5}.a2-feature-copy h2{font-size:clamp(38px,4vw,58px);letter-spacing:-.05em;line-height:1.14;margin:22px 0}.a2-feature-copy p{color:var(--muted);font-size:18px}.a2-facts{display:grid;gap:0;margin-top:30px}.a2-fact{border-top:1px solid var(--line);display:grid;gap:16px;grid-template-columns:95px 1fr;padding:17px 0}.a2-fact strong{color:var(--blue);font-size:13px}.a2-fact span{font-size:15px;line-height:1.65}
 .a2-process{display:grid;gap:0;grid-column:2/span 12;grid-template-columns:repeat(4,1fr);margin-top:72px}.a2-step{border-left:1px solid rgba(255,255,255,.25);min-height:250px;padding:24px}.a2-step:first-child{border-left-color:var(--pink)}.a2-step b{color:#7395ff;font-size:13px}.a2-step h3{font-size:22px;line-height:1.25;margin:35px 0 14px}.a2-step p{color:#bfcbed;font-size:14px}.a2-step span{color:var(--pink);font-size:20px}
 .a2-logos{display:grid;grid-column:2/span 12;grid-template-columns:repeat(4,1fr);margin-top:60px}.a2-logo-cell{align-items:center;border-bottom:1px solid var(--line);display:flex;font-size:19px;font-weight:750;height:100px}.a2-logo-cell:nth-child(-n+4){border-top:1px solid var(--line)}
 .a2-cta{background:var(--blue);color:#fff;padding-block:90px}.a2-cta-copy{grid-column:2/span 7}.a2-cta h2{font-size:42px;letter-spacing:-.04em;line-height:1.2;margin:0}.a2-cta p{color:#d5def7;margin:18px 0 0}.a2-cta .a2-button{align-self:center;background:#fff;border-color:#fff;color:var(--blue-deep);grid-column:11/span 2;justify-self:stretch}.a2-cta .a2-button:hover{background:var(--pink);border-color:var(--pink);color:#fff}
@@ -268,3 +268,7 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 /* Three verified company-history milestones */
 .a2-timeline{grid-template-columns:repeat(3,1fr)}
 @media(max-width:760px){.a2-timeline{grid-template-columns:1fr}}
+
+/* Official Dacom Crossing domestic-network map: preserve its full route geometry */
+.a2-feature-media.official-map{background:#eef2f5;border:1px solid var(--line)}
+.a2-feature-media.official-map img{aspect-ratio:930/671;display:block;height:auto;object-fit:contain;width:100%}
