@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+<title id="title">Dacom Crossing service process</title>
+<desc id="desc">Service inquiry, route coordination, provisioning and operations flow</desc>
+<rect width="1200" height="760" fill="#f5f8ff"/>
+<text x="70" y="72" fill="#1647d8" font-family="Arial, sans-serif" font-size="16" font-weight="700" letter-spacing="3">SERVICE PROCESS</text>
+<path d="M70 160H1130" stroke="#d8e0ef"/>
+<g font-family="Arial, sans-serif">
+  <path d="M160 330H1040" stroke="#1647d8" stroke-width="2"/>
+  <g transform="translate(160 330)"><circle r="18" fill="#1647d8"/><circle r="6" fill="#fff"/><text x="0" y="78" fill="#1647d8" font-size="14" font-weight="700" text-anchor="middle">01</text><text x="0" y="116" fill="#10244b" font-size="23" font-weight="700" text-anchor="middle">서비스 문의</text><text x="0" y="151" fill="#667089" font-size="15" text-anchor="middle">요구 조건 확인</text></g>
+  <g transform="translate(450 330)"><circle r="18" fill="#1647d8"/><circle r="6" fill="#fff"/><text x="0" y="78" fill="#1647d8" font-size="14" font-weight="700" text-anchor="middle">02</text><text x="0" y="116" fill="#10244b" font-size="23" font-weight="700" text-anchor="middle">구간 협의</text><text x="0" y="151" fill="#667089" font-size="15" text-anchor="middle">국내외 접속 구성</text></g>
+  <g transform="translate(750 330)"><circle r="18" fill="#1647d8"/><circle r="6" fill="#fff"/><text x="0" y="78" fill="#1647d8" font-size="14" font-weight="700" text-anchor="middle">03</text><text x="0" y="116" fill="#10244b" font-size="23" font-weight="700" text-anchor="middle">개통·시험</text><text x="0" y="151" fill="#667089" font-size="15" text-anchor="middle">일정과 품질 확인</text></g>
+  <g transform="translate(1040 330)"><circle r="18" fill="#d62d78"/><circle r="6" fill="#fff"/><text x="0" y="78" fill="#d62d78" font-size="14" font-weight="700" text-anchor="middle">04</text><text x="0" y="116" fill="#10244b" font-size="23" font-weight="700" text-anchor="middle">운영 전환</text><text x="0" y="151" fill="#667089" font-size="15" text-anchor="middle">24/365 관제</text></g>
+  <text x="70" y="688" fill="#667089" font-size="17">Inquiry · Coordination · Provisioning · Operations</text>
+</g>
+</svg>

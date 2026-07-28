@@ -272,3 +272,27 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 /* Official Dacom Crossing domestic-network map: preserve its full route geometry */
 .a2-feature-media.official-map{background:#eef2f5;border:1px solid var(--line)}
 .a2-feature-media.official-map img{aspect-ratio:930/671;display:block;height:auto;object-fit:contain;width:100%}
+
+/* Editorial company history: era, narrative, and evidence instead of metric tiles */
+.a2-history{grid-column:3/span 10;list-style:none;margin:72px 0 0;padding:0}
+.a2-history-era{border-top:1px solid var(--blue);display:grid;gap:30px;grid-template-columns:2.1fr 5.5fr 2.4fr;padding:46px 0 62px}
+.a2-history-period strong{color:var(--blue);display:block;font-size:34px;font-weight:600;letter-spacing:-.03em;line-height:1.1}
+.a2-history-period span,.a2-history-story>small,.a2-history-proof small{color:var(--muted);display:block;font-size:11px;font-weight:700;letter-spacing:.12em;margin-top:12px;text-transform:uppercase}
+.a2-history-story>small{color:var(--blue);margin:0 0 15px}
+.a2-history-story h3{color:var(--blue-deep);font-size:27px;font-weight:600;letter-spacing:-.025em;line-height:1.35;margin:0 0 15px}
+.a2-history-story>p{color:var(--muted);font-size:16px;line-height:1.7;margin:0 0 30px;max-width:620px}
+.a2-history-story ul{border-top:1px solid var(--line);list-style:none;margin:0;padding:0}
+.a2-history-story li{border-bottom:1px solid var(--line);display:grid;gap:16px;grid-template-columns:88px 1fr;padding:13px 0}
+.a2-history-story time{color:var(--blue);font-size:12px;font-weight:700}
+.a2-history-story li span{color:var(--text);font-size:14px;line-height:1.55}
+.a2-history-proof{align-self:start;border-left:1px solid var(--line);display:grid;gap:13px;padding:0 0 0 24px}
+.a2-history-proof small{margin:0 0 5px}.a2-history-proof span{color:var(--text);font-size:13px;line-height:1.5}.a2-history-proof b{color:var(--blue);font-size:21px;margin-right:5px}
+.a2-history-proof.emphasis{border-left-color:var(--pink)}
+.a2-detail-media.diagram{background:#f5f8ff;border:1px solid var(--line)}
+.a2-detail-media.diagram img{height:auto;object-fit:contain;width:100%}
+.a2-detail-media.diagram .a2-media-caption{border-top:1px solid var(--line)}
+@media(max-width:1199px){.a2-history{grid-column:2/span 10}.a2-history-era{grid-template-columns:2fr 5.5fr 2.5fr}}
+@media(max-width:760px){.a2-history{grid-column:1/span 6;margin-top:52px}.a2-history-era{gap:28px;grid-template-columns:1fr;padding:34px 0 48px}.a2-history-period strong{font-size:30px}.a2-history-story h3{font-size:24px}.a2-history-story li{grid-template-columns:78px 1fr}.a2-history-proof{border-left:0;border-top:1px solid var(--line);grid-template-columns:1fr 1fr;padding:22px 0 0}.a2-history-proof small{grid-column:1/-1}.a2-detail-media.diagram img{height:auto}}
+
+/* Keep technical reference images legible instead of forcing landscape sources into portrait crops */
+.a2-detail-media:not(.diagram) img{aspect-ratio:4/3;height:auto;object-fit:cover}
