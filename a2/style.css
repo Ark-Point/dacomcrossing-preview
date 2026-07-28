@@ -220,6 +220,28 @@ body{font-size:17px;font-weight:300;line-height:26px}
 /* Sticky-safe shell and balanced five-item mobile subnav */
 body{overflow-x:clip}.a2-shell{overflow:visible}
 @media(max-width:760px){
-  .a2-localnav-inner{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .a2-localnav-inner{grid-template-columns:repeat(auto-fit,minmax(60px,1fr))}
   .a2-localnav a{font-size:12px;line-height:18px;padding:14px 2px;white-space:nowrap}
 }
+
+/* StyleGallery-inspired proof repetition: ram-grid + icon-frame */
+.a2-ecosystem-grid{background:var(--line);border:1px solid var(--line);display:grid;gap:1px;grid-column:3/span 10;grid-template-columns:repeat(auto-fit,minmax(min(220px,100%),1fr));list-style:none;margin:64px 0 0;padding:0}
+.a2-ecosystem-item{background:#fff;display:flex;flex-direction:column;justify-content:space-between;min-height:210px;padding:28px;transition:background-color .2s}
+.a2-ecosystem-item:hover{background:var(--blue-soft)}
+.a2-icon-frame{background:var(--blue-soft);color:var(--blue);display:grid;height:52px;place-items:center;width:52px}
+.a2-icon-frame svg{height:32px;width:32px}
+.a2-ecosystem-item small{color:var(--blue);display:block;font-size:11px;font-weight:600;letter-spacing:.08em;margin-bottom:8px;text-transform:uppercase}
+.a2-ecosystem-item h3{font-size:19px;font-weight:600;line-height:26px;margin:0}
+.a2-ecosystem-item p{color:var(--muted);font-size:14px;line-height:21px;margin:6px 0 0}
+@media(max-width:1199px){.a2-ecosystem-grid{grid-column:2/span 10}}
+@media(max-width:760px){
+  .a2-ecosystem-grid{grid-column:1/span 6;grid-template-columns:repeat(2,minmax(0,1fr));margin-top:45px}
+  .a2-ecosystem-item{min-height:185px;padding:18px}
+  .a2-icon-frame{height:44px;width:44px}.a2-icon-frame svg{height:27px;width:27px}
+  .a2-ecosystem-item h3{font-size:16px;line-height:23px}.a2-ecosystem-item p{font-size:13px;line-height:19px}
+}
+
+/* Intrinsic local navigation distribution for any item count */
+.a2-localnav-inner{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
+.a2-localnav a{text-align:center}
+@media(max-width:760px){.a2-localnav-inner{grid-template-columns:repeat(auto-fit,minmax(60px,1fr))}}
