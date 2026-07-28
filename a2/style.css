@@ -167,3 +167,59 @@ body{font-size:17px;font-weight:300;line-height:26px}
   body.menu-open{padding-top:300px}
   .a2-card-body p,.a2-step p,.a2-year p,.a2-service p,.a2-service li,.a2-partner-row p,.a2-system-copy p,.a2-side-note,.a2-placeholder p{font-size:16px;line-height:25px}
 }
+
+/* Recovery direction: Concept A only, no B-derived component styling */
+:root{--blue:#1647d8;--pink:#d62d78}
+.a2-hero-grid{align-items:start;padding-top:72px}
+.a2-hero-copy{grid-column:3/span 5;padding:0}
+.a2-hero-visual{grid-column:9/span 4;min-height:0}
+.a2-hero-visual:before{display:none}
+.a2-hero-visual img{display:block;height:430px;position:static}
+.a2-hero-caption{background:transparent;border-top:1px solid var(--line);box-shadow:none;margin-top:14px;padding:14px 0 0;position:static}
+.a2-hero-caption strong{font-size:14px;font-weight:500}.a2-hero-caption span{font-size:12px;font-weight:500;letter-spacing:0;text-transform:none}
+.a2-proof-grid{grid-column:3/span 10}
+.a2-section-head{grid-column:3/span 5}.a2-section-head.wide{grid-column:3/span 7}.a2-side-note{grid-column:10/span 3}
+.a2-system-copy{grid-column:3/span 4}.a2-system-map{grid-column:8/span 5}
+.a2-card-grid,.a2-process,.a2-logos,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row{grid-column:3/span 10}
+.a2-feature-media{grid-column:3/span 5}.a2-feature-copy{grid-column:9/span 4}
+.a2-localnav-inner{grid-column:3/span 10}
+.a2-detail-copy{grid-column:3/span 5}.a2-detail-media{grid-column:9/span 4}
+.a2-contact-info{grid-column:3/span 4}.a2-form{grid-column:8/span 5}
+.a2-footer-main{grid-column:3/span 6}.a2-footer-info{grid-column:10/span 3}.a2-footer-legal{grid-column:3/span 10}
+.a2-cta{background:var(--blue-night);border-top:1px solid rgba(255,255,255,.15);color:#fff;padding-block:110px}
+.a2-cta-copy{border-top:4px solid var(--pink);grid-column:3/span 7;padding-top:28px}
+.a2-cta p{color:#aebcdc}
+.a2-cta .a2-button{align-self:end;background:transparent;border-color:rgba(255,255,255,.55);color:#fff;grid-column:11/span 2;justify-self:stretch}
+.a2-cta .a2-button:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:1199px){
+  .a2-grid{grid-template-columns:repeat(12,minmax(0,1fr));column-gap:22px}
+  .a2-hero-copy{grid-column:2/span 5}.a2-hero-visual{grid-column:8/span 4}.a2-proof-grid{grid-column:2/span 10}
+  .a2-section-head{grid-column:2/span 5}.a2-section-head.wide{grid-column:2/span 7}.a2-side-note{grid-column:10/span 2}
+  .a2-system-copy{grid-column:2/span 4}.a2-system-map{grid-column:7/span 5}
+  .a2-card-grid,.a2-process,.a2-logos,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row{grid-column:2/span 10}
+  .a2-feature-media{grid-column:2/span 5}.a2-feature-copy{grid-column:8/span 4}
+  .a2-localnav-inner{grid-column:2/span 10}.a2-detail-copy{grid-column:2/span 5}.a2-detail-media{grid-column:8/span 4}
+  .a2-contact-info{grid-column:2/span 5}.a2-form{grid-column:8/span 4}
+  .a2-cta-copy{grid-column:2/span 7}.a2-cta .a2-button{grid-column:10/span 2}
+  .a2-footer-main{grid-column:2/span 6}.a2-footer-info{grid-column:9/span 3}.a2-footer-legal{grid-column:2/span 10}
+}
+@media(max-width:760px){
+  .a2-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .a2-hero-grid{padding-top:50px}
+  .a2-hero-copy,.a2-hero-visual,.a2-proof-grid,.a2-section-head,.a2-section-head.wide,.a2-side-note,.a2-system-copy,.a2-system-map,.a2-card-grid,.a2-feature-media,.a2-feature-copy,.a2-process,.a2-logos,.a2-localnav-inner,.a2-detail-copy,.a2-detail-media,.a2-timeline,.a2-metrics,.a2-table,.a2-service-grid,.a2-partner-row,.a2-contact-info,.a2-form,.a2-cta-copy,.a2-cta .a2-button,.a2-footer-main,.a2-footer-info,.a2-footer-legal{grid-column:1/span 6}
+  .a2-hero-copy{padding:0}.a2-hero-visual{margin-top:48px}.a2-hero-visual img{height:320px}.a2-hero-caption{margin-top:12px;padding-top:12px}
+  .a2-cta{padding-block:80px}.a2-cta .a2-button{justify-self:start;margin-top:34px;width:auto}
+}
+
+/* Mobile subpage navigation: fixed clean columns, no horizontal carousel */
+@media(max-width:760px){
+  .a2-localnav-inner{display:grid;gap:0;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible}
+  .a2-localnav a{font-size:11px;line-height:16px;padding:14px 3px;text-align:center;white-space:normal}
+}
+
+/* Sticky-safe shell and balanced five-item mobile subnav */
+body{overflow-x:clip}.a2-shell{overflow:visible}
+@media(max-width:760px){
+  .a2-localnav-inner{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .a2-localnav a{font-size:12px;line-height:18px;padding:14px 2px;white-space:nowrap}
+}
