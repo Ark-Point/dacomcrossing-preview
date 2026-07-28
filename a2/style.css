@@ -246,3 +246,21 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-localnav-inner{display:grid;gap:0;grid-template-columns:repeat(auto-fit,minmax(120px,1fr))}
 .a2-localnav a{text-align:center}
 @media(max-width:760px){.a2-localnav-inner{grid-template-columns:repeat(auto-fit,minmax(60px,1fr))}}
+
+/* CTA separates from the dark footer as a compact editorial conversion strip */
+.a2-cta{background:linear-gradient(90deg,#f7f9fc 0%,#edf3fb 100%);border-bottom:1px solid var(--line);border-top:1px solid var(--line);color:var(--ink);padding-block:78px}
+.a2-cta .a2-grid{align-items:center}
+.a2-cta-copy{border-top:0;grid-column:3/span 7;padding-top:27px;position:relative}
+.a2-cta-copy:before{color:var(--blue);content:"ROUTE REVIEW";font-size:12px;font-weight:600;letter-spacing:.1em;left:0;position:absolute;top:0}
+.a2-cta-copy:after{background:var(--pink);content:"";height:1px;left:122px;position:absolute;top:8px;width:56px}
+.a2-cta h2{font-size:32px;line-height:42px}
+.a2-cta p{color:var(--muted)}
+.a2-cta .a2-button{align-self:center;background:var(--blue-deep);border-color:var(--blue-deep);color:#fff;grid-column:11/span 2;justify-self:stretch}
+.a2-cta .a2-button:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+@media(max-width:1199px){.a2-cta-copy{grid-column:2/span 7}.a2-cta .a2-button{grid-column:10/span 2}}
+@media(max-width:760px){
+  .a2-cta{padding-block:64px}
+  .a2-cta-copy,.a2-cta .a2-button{grid-column:1/span 6}
+  .a2-cta h2{font-size:28px;line-height:38px}
+  .a2-cta .a2-button{justify-self:start;margin-top:30px;width:auto}
+}
