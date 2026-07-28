@@ -251,8 +251,8 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-cta{background:linear-gradient(90deg,#f7f9fc 0%,#edf3fb 100%);border-bottom:1px solid var(--line);border-top:1px solid var(--line);color:var(--ink);padding-block:78px}
 .a2-cta .a2-grid{align-items:center}
 .a2-cta-copy{border-top:0;grid-column:3/span 7;padding-top:27px;position:relative}
-.a2-cta-copy:before{color:var(--blue);content:"ROUTE REVIEW";font-size:12px;font-weight:600;letter-spacing:.1em;left:0;position:absolute;top:0}
-.a2-cta-copy:after{background:var(--pink);content:"";height:1px;left:122px;position:absolute;top:8px;width:56px}
+.a2-cta-copy:before{color:var(--blue);content:"SERVICE INQUIRY";font-size:12px;font-weight:600;letter-spacing:.1em;left:0;position:absolute;top:0}
+.a2-cta-copy:after{background:var(--pink);content:"";height:1px;left:138px;position:absolute;top:8px;width:56px}
 .a2-cta h2{font-size:32px;line-height:42px}
 .a2-cta p{color:var(--muted)}
 .a2-cta .a2-button{align-self:center;background:var(--blue-deep);border-color:var(--blue-deep);color:#fff;grid-column:11/span 2;justify-self:stretch}
@@ -264,3 +264,7 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   .a2-cta h2{font-size:28px;line-height:38px}
   .a2-cta .a2-button{justify-self:start;margin-top:30px;width:auto}
 }
+
+/* Three verified company-history milestones */
+.a2-timeline{grid-template-columns:repeat(3,1fr)}
+@media(max-width:760px){.a2-timeline{grid-template-columns:1fr}}

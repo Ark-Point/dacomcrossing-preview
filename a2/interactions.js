@@ -49,7 +49,18 @@
   const form = document.querySelector('.a2-form');
   form?.addEventListener('submit', (event) => {
     event.preventDefault();
+    const data = new FormData(form);
+    const title = String(data.get('title') || '서비스 문의');
+    const body = [
+      `관심 서비스: ${data.get('service') || ''}`,
+      `회사명: ${data.get('company') || ''}`,
+      `연락처: ${data.get('contact') || ''}`,
+      '',
+      String(data.get('message') || '')
+    ].join('\n');
+    const mailto = `mailto:dacom@dacomcrossing.co.kr?subject=${encodeURIComponent(`[홈페이지 문의] ${title}`)}&body=${encodeURIComponent(body)}`;
     const status = form.querySelector('.a2-form-status');
-    if (status) status.textContent = '프로토타입입니다. 실제 제출 시 담당자 이메일로 전달됩니다.';
+    if (status) status.textContent = '이메일 작성 창을 엽니다.';
+    window.location.href = mailto;
   });
 })();
