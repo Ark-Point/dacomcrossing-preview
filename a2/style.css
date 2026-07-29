@@ -359,3 +359,18 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   .a2-partner-icon{height:52px;width:52px}
   .a2-partner-content{grid-column:1/-1}
 }
+
+/* Capability rows: semantic keyword, fine divider, Korean description */
+.a2-bullets li{align-items:center;display:grid;gap:14px;grid-template-columns:104px 32px minmax(0,1fr);padding:14px 0}
+.a2-bullets li:before{content:none}
+.a2-bullets li>b{color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.04em}
+.a2-bullets li>i{background:var(--line);height:1px;width:32px}
+.a2-bullets li>span{font-size:15px;line-height:22px}
+/* Technical service names remain primary; topology visuals explain each service */
+.a2-service-visual{border-bottom:1px solid var(--line);color:var(--blue);margin:-34px -34px 28px;overflow:hidden}
+.a2-service-visual svg{display:block;height:auto;width:100%}
+@media(max-width:760px){
+  .a2-bullets li{gap:10px;grid-template-columns:88px 22px minmax(0,1fr)}
+  .a2-bullets li>i{width:22px}
+  .a2-bullets li>span{font-size:14px;line-height:21px}
+}
