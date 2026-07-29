@@ -271,7 +271,7 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 
 /* Official Dacom Crossing domestic-network map: preserve its full route geometry */
 .a2-feature-media.official-map{background:#eef2f5;border:1px solid var(--line)}
-.a2-feature-media.official-map img{aspect-ratio:4/5;display:block;height:auto;object-fit:contain;width:100%}
+.a2-feature-media.official-map img{aspect-ratio:1200/1276;display:block;height:auto;object-fit:contain;width:100%}
 
 /* Editorial company history: era, narrative, and evidence instead of metric tiles */
 .a2-history{grid-column:3/span 10;list-style:none;margin:72px 0 0;padding:0}
