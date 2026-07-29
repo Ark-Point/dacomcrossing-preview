@@ -271,7 +271,7 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 
 /* Official Dacom Crossing domestic-network map: preserve its full route geometry */
 .a2-feature-media.official-map{background:#eef2f5;border:1px solid var(--line)}
-.a2-feature-media.official-map img{aspect-ratio:930/671;display:block;height:auto;object-fit:contain;width:100%}
+.a2-feature-media.official-map img{aspect-ratio:4/5;display:block;height:auto;object-fit:contain;width:100%}
 
 /* Editorial company history: era, narrative, and evidence instead of metric tiles */
 .a2-history{grid-column:3/span 10;list-style:none;margin:72px 0 0;padding:0}
@@ -316,3 +316,10 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   .a2-localnav-inner.count-5{grid-template-columns:repeat(5,minmax(0,1fr))}
   .a2-localnav a{font-size:12px;font-weight:600;line-height:16px;padding:14px 4px}
 }
+
+/* Official Dacom Crossing master logo */
+.a2-logo{align-items:center;display:flex;line-height:1}
+.a2-logo img{height:auto;width:160px}
+@media(max-width:760px){.a2-logo img{width:145px}}
+
+@media(max-width:760px){.a2-feature-media.official-map .a2-feature-label{bottom:auto;left:0;right:auto;top:16px}}
