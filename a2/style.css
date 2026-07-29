@@ -333,3 +333,37 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 /* Align the service-inquiry rule to the label's optical center */
 .a2-cta-copy:before{line-height:16px}
 .a2-cta-copy:after{top:8px;transform:translateY(-50%)}
+
+/* Keep square markers for page/section headers; use a quieter rule internally */
+.eyebrow:before{height:1px;width:36px}
+.a2-section-head .eyebrow:before,.a2-subhero-copy .eyebrow:before{height:8px;width:8px}
+.a2-detail-label{align-items:center;color:var(--blue);display:flex;font-size:17px;font-weight:300;gap:12px}
+.a2-detail-label b{color:var(--pink);font-size:13px;font-weight:700;letter-spacing:.08em}
+.a2-detail-label i{background:var(--line);height:1px;width:36px}
+.a2-detail-label span{white-space:nowrap}
+/* Match every desktop detail visual to its adjacent copy height */
+@media(min-width:761px){
+  .a2-detail>.a2-grid{align-items:stretch}
+  .a2-detail-media{align-self:stretch;display:flex;flex-direction:column;min-height:0}
+  .a2-detail-media>img{aspect-ratio:auto!important;flex:1 1 0;height:0!important;min-height:0;object-fit:cover;width:100%}
+  .a2-detail-media>.a2-media-caption{flex:0 0 auto}
+  .a2-detail-media>.a2-placeholder{height:100%;min-height:0}
+}
+.a2-detail-media.visual{border:1px solid var(--line);overflow:hidden}
+.a2-detail-media.visual .a2-media-caption{border-top:1px solid var(--line)}
+/* Icon-led customer groups with compact service tags */
+.a2-partner-row{align-items:center;gap:24px;grid-template-columns:72px 2fr 5fr}
+.a2-partner-icon{align-items:center;border:1px solid #cbd7f2;border-radius:50%;color:var(--blue);display:flex;height:58px;justify-content:center;width:58px}
+.a2-partner-icon svg{height:32px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.7;width:32px}
+.a2-partner-title h3{margin:0}
+.a2-partner-title strong{display:block;font-size:13px;margin-top:5px;text-align:left}
+.a2-partner-content p{margin:0}
+.a2-partner-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:14px 0 0;padding:0}
+.a2-partner-tags li{background:#eef3ff;color:var(--blue);font-size:12px;font-weight:700;padding:6px 9px}
+@media(max-width:760px){
+  .a2-detail-label{font-size:15px}
+  .a2-detail-media.visual img{height:320px;object-fit:cover}
+  .a2-partner-row{gap:14px 18px;grid-template-columns:56px 1fr}
+  .a2-partner-icon{height:52px;width:52px}
+  .a2-partner-content{grid-column:1/-1}
+}
