@@ -322,4 +322,4 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-logo img{height:auto;width:160px}
 @media(max-width:760px){.a2-logo img{width:145px}}
 
-@media(max-width:760px){.a2-feature-media.official-map .a2-feature-label{bottom:auto;left:0;right:auto;top:16px}}
+.a2-feature-media.official-map .a2-feature-label{bottom:auto;left:0;right:auto;top:16px}
