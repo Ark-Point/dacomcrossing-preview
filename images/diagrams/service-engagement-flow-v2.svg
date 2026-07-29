@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1040" viewBox="0 0 900 1040" role="img" aria-labelledby="title desc">
+<title id="title">서비스 문의부터 운영까지의 이용 절차</title>
+<desc id="desc">서비스 문의, 구간 협의, 개통과 시험, 운영 전환의 네 단계</desc>
+<rect width="900" height="1040" fill="#f5f8ff"/>
+<g font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif">
+  <text x="72" y="74" fill="#1647d8" font-size="17" font-weight="700" letter-spacing="2.4">SERVICE PROCESS</text>
+  <text x="72" y="166" fill="#10244b" font-size="62" font-weight="650" letter-spacing="-2">문의부터 운영까지</text>
+  <text x="72" y="210" fill="#667089" font-size="22">서비스 조건 확인부터 운영 전환까지 순서대로 진행됩니다.</text>
+  <path d="M132 310V860" stroke="#b9c8ee" stroke-width="3"/>
+  <g>
+    <circle cx="132" cy="330" r="30" fill="#1647d8"/><text x="132" y="338" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">01</text>
+    <text x="204" y="326" fill="#10244b" font-size="30" font-weight="650">서비스 문의</text><text x="204" y="364" fill="#667089" font-size="20">서비스 종류와 이용 조건을 확인합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="500" r="30" fill="#1647d8"/><text x="132" y="508" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">02</text>
+    <text x="204" y="496" fill="#10244b" font-size="30" font-weight="650">구간 협의</text><text x="204" y="534" fill="#667089" font-size="20">국내외 접속 구간과 일정을 협의합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="670" r="30" fill="#1647d8"/><text x="132" y="678" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">03</text>
+    <text x="204" y="666" fill="#10244b" font-size="30" font-weight="650">개통·시험</text><text x="204" y="704" fill="#667089" font-size="20">접속 구성을 완료하고 품질시험을 진행합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="840" r="30" fill="#d62d78"/><text x="132" y="848" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">04</text>
+    <text x="204" y="836" fill="#10244b" font-size="30" font-weight="650">운영 전환</text><text x="204" y="874" fill="#667089" font-size="20">회선 관제와 장애 대응 체계로 전환합니다.</text>
+  </g>
+  <path d="M72 944H828" stroke="#d8e0ef"/>
+  <text x="72" y="986" fill="#1647d8" font-size="16" font-weight="700" letter-spacing="1.5">INQUIRY · COORDINATION · PROVISIONING · OPERATIONS</text>
+</g>
+</svg>

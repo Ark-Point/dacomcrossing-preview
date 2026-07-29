@@ -323,3 +323,13 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 @media(max-width:760px){.a2-logo img{width:145px}}
 
 .a2-feature-media.official-map .a2-feature-label{bottom:auto;left:0;right:auto;top:16px}
+
+/* Centered, equal-width desktop global navigation */
+@media(min-width:761px){
+  .a2-nav{display:grid;gap:0;grid-template-columns:repeat(5,96px);justify-content:center}
+  .a2-nav a{display:block;padding:8px 0;text-align:center;width:96px}
+  .a2-nav a:after{left:20px;transform-origin:center;width:56px}
+}
+/* Align the service-inquiry rule to the label's optical center */
+.a2-cta-copy:before{line-height:16px}
+.a2-cta-copy:after{top:8px;transform:translateY(-50%)}

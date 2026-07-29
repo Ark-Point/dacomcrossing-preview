@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1040" viewBox="0 0 900 1040" role="img" aria-labelledby="title desc">
+<title id="title">24시간 365일 회선 관제 흐름</title>
+<desc id="desc">회선 상태 감시, 영향 파악, 경로 전환, 복구 안내의 네 단계</desc>
+<rect width="900" height="1040" fill="#f5f8ff"/>
+<g font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, Arial, sans-serif">
+  <text x="72" y="74" fill="#1647d8" font-size="17" font-weight="700" letter-spacing="2.4">24/365 MONITORING</text>
+  <text x="72" y="166" fill="#10244b" font-size="62" font-weight="650" letter-spacing="-2">회선 관제 흐름</text>
+  <text x="72" y="210" fill="#667089" font-size="22">감시부터 복구 안내까지 하나의 운영 절차로 이어집니다.</text>
+  <path d="M132 310V860" stroke="#b9c8ee" stroke-width="3"/>
+  <g>
+    <circle cx="132" cy="330" r="30" fill="#1647d8"/><text x="132" y="338" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">01</text>
+    <text x="204" y="326" fill="#10244b" font-size="30" font-weight="650">상태 감시</text><text x="204" y="364" fill="#667089" font-size="20">회선 상태를 24시간 365일 확인합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="500" r="30" fill="#1647d8"/><text x="132" y="508" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">02</text>
+    <text x="204" y="496" fill="#10244b" font-size="30" font-weight="650">영향 파악</text><text x="204" y="534" fill="#667089" font-size="20">장애 접수와 영향 범위를 확인합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="670" r="30" fill="#1647d8"/><text x="132" y="678" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">03</text>
+    <text x="204" y="666" fill="#10244b" font-size="30" font-weight="650">경로 전환</text><text x="204" y="704" fill="#667089" font-size="20">필요 시 보호 경로 전환을 지원합니다.</text>
+  </g>
+  <g>
+    <circle cx="132" cy="840" r="30" fill="#d62d78"/><text x="132" y="848" fill="#fff" font-size="17" font-weight="700" text-anchor="middle">04</text>
+    <text x="204" y="836" fill="#10244b" font-size="30" font-weight="650">복구 안내</text><text x="204" y="874" fill="#667089" font-size="20">복구 진행 상황과 결과를 안내합니다.</text>
+  </g>
+  <path d="M72 944H828" stroke="#d8e0ef"/>
+  <text x="72" y="986" fill="#1647d8" font-size="16" font-weight="700" letter-spacing="1.5">MONITOR · IDENTIFY · SWITCH · RECOVER</text>
+</g>
+</svg>
