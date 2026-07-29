@@ -334,13 +334,6 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-cta-copy:before{line-height:16px}
 .a2-cta-copy:after{top:8px;transform:translateY(-50%)}
 
-/* Keep square markers for page/section headers; use a quieter rule internally */
-.eyebrow:before{height:1px;width:36px}
-.a2-section-head .eyebrow:before,.a2-subhero-copy .eyebrow:before{height:8px;width:8px}
-.a2-detail-label{align-items:center;color:var(--blue);display:flex;font-size:17px;font-weight:300;gap:12px}
-.a2-detail-label b{color:var(--pink);font-size:13px;font-weight:700;letter-spacing:.08em}
-.a2-detail-label i{background:var(--line);height:1px;width:36px}
-.a2-detail-label span{white-space:nowrap}
 /* Match every desktop detail visual to its adjacent copy height */
 @media(min-width:761px){
   .a2-detail>.a2-grid{align-items:stretch}
@@ -361,7 +354,6 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-partner-tags{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:14px 0 0;padding:0}
 .a2-partner-tags li{background:#eef3ff;color:var(--blue);font-size:12px;font-weight:700;padding:6px 9px}
 @media(max-width:760px){
-  .a2-detail-label{font-size:15px}
   .a2-detail-media.visual img{height:320px;object-fit:cover}
   .a2-partner-row{gap:14px 18px;grid-template-columns:56px 1fr}
   .a2-partner-icon{height:52px;width:52px}
