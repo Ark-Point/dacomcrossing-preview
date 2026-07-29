@@ -305,3 +305,14 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-history-compact p{color:var(--muted);font-size:15px;line-height:1.65;margin:0}
 @media(max-width:1199px){.a2-history-compact{grid-column:2/span 10}}
 @media(max-width:760px){.a2-history-compact{grid-column:1/span 6;margin-top:42px}.a2-history-compact li{gap:18px;grid-template-columns:82px 1fr;padding:23px 0}.a2-history-compact time{font-size:14px}.a2-history-compact h3{font-size:18px}}
+
+/* Consistent centered local navigation across 2, 3, and 5-section pages */
+.a2-localnav-inner{display:grid;gap:0;grid-template-columns:repeat(var(--local-count),144px);justify-content:center;overflow:visible}
+.a2-localnav a{align-items:center;display:flex;font-size:13px;font-weight:600;justify-content:center;min-width:0;padding:17px 10px;text-align:center;white-space:normal}
+@media(max-width:760px){
+  .a2-localnav-inner{grid-template-columns:repeat(var(--local-count),minmax(0,1fr));width:100%}
+  .a2-localnav-inner.count-2{grid-template-columns:repeat(2,120px)}
+  .a2-localnav-inner.count-3{grid-template-columns:repeat(3,100px)}
+  .a2-localnav-inner.count-5{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .a2-localnav a{font-size:12px;font-weight:600;line-height:16px;padding:14px 4px}
+}
