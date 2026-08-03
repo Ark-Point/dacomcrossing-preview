@@ -354,3 +354,17 @@
 .vision-expertise-head>p{max-width:700px}
 @media(max-width:1199px){.vision-expertise-head{grid-column:2/span 9}}
 @media(max-width:760px){.vision-expertise-head{grid-column:1/span 6}}
+
+/* A2 Company feedback: simplified Vision and stronger values */
+.vision-feature-copy{grid-column:3/span 6;padding-right:40px}
+.vision-feature-lead{max-width:720px}
+.vision-feature-lead p{margin:0}
+.vision-feature-lead p+p{margin-top:18px}
+.vision-feature-media{grid-column:9/span 4}
+.vision-feature-media img{height:460px}
+.vision-principles{margin-top:72px}
+.vision-principles article{min-height:240px;padding:32px 34px}
+.vision-principles article>span{color:var(--blue);font-size:30px;font-weight:600;letter-spacing:-.04em;line-height:1}
+.vision-principles h3{font-size:25px;margin:28px 0 12px}
+@media(max-width:1199px){.vision-feature-copy{grid-column:2/span 6}.vision-feature-media{grid-column:8/span 4}}
+@media(max-width:760px){.vision-feature-copy,.vision-feature-media{grid-column:1/span 6}.vision-feature-media{margin-top:38px}.vision-feature-media img{height:300px}.vision-principles{margin-top:48px}.vision-principles article{min-height:220px}.vision-principles h3{margin-top:22px}}

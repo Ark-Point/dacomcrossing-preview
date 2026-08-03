@@ -369,3 +369,12 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   .a2-bullets li:before{flex-basis:24px;width:24px}
   .a2-bullets li>span{font-size:14px;line-height:21px}
 }
+
+/* A2 language navigation */
+.a2-nav{grid-column:4/span 7}
+.a2-language{align-items:center;color:var(--blue-deep);display:inline-flex;font-size:12px;font-weight:700;gap:6px;grid-column:11/span 1;justify-self:end;letter-spacing:.04em;padding:8px 0}
+.a2-language svg{fill:none;height:19px;stroke:currentColor;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5;width:19px}
+.a2-language:hover,.a2-language:focus-visible{color:var(--blue)}
+.a2-header-cta{grid-column:12/span 3}
+@media(max-width:1100px){.a2-nav{grid-column:3/span 7}.a2-language{grid-column:10}.a2-header-cta{grid-column:11/span 2;font-size:13px;padding-inline:8px}}
+@media(max-width:760px){.a2-language{grid-column:5;justify-self:end}.a2-menu{grid-column:6}.a2-nav.is-open{padding-right:20px}.a2-header.menu-open,.a2-header.menu-open.is-compact{height:338px}}
