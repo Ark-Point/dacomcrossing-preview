@@ -378,3 +378,32 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
 .a2-header-cta{grid-column:12/span 3}
 @media(max-width:1100px){.a2-nav{grid-column:3/span 7}.a2-language{grid-column:10}.a2-header-cta{grid-column:11/span 2;font-size:13px;padding-inline:8px}}
 @media(max-width:760px){.a2-language{grid-column:5;justify-self:end}.a2-menu{grid-column:6}.a2-nav.is-open{padding-right:20px}.a2-header.menu-open,.a2-header.menu-open.is-compact{height:338px}}
+
+/* Client-supplied official diagrams */
+.a2-detail-media.official-diagram{background:#f6f8fc;border:1px solid var(--line)}
+.a2-detail-media.official-diagram img{background:#f6f8fc;height:410px;object-fit:contain;padding:18px}
+@media(max-width:760px){.a2-detail-media.official-diagram img{height:300px;padding:10px}}
+
+/* Internal Hero Vision review document */
+.vision-review{background:#fff}
+.vision-review-back{grid-column:12/span 3}
+.vision-review-hero{background:linear-gradient(180deg,#fff 0%,#eef4ff 100%);padding:210px 0 110px}
+.vision-review-hero .a2-grid{align-items:end}
+.vision-review-hero .a2-grid>div{grid-column:2/span 8}
+.vision-review-hero h1{font-size:58px;font-weight:600;letter-spacing:-.055em;line-height:1.14;margin:25px 0}
+.vision-review-hero p{color:var(--muted);font-size:18px;line-height:1.75;margin:0;max-width:780px}
+.vision-review-hero aside{background:var(--blue-deep);color:#fff;display:grid;gap:10px;grid-column:11/span 3;padding:27px}
+.vision-review-hero aside strong{font-size:18px;margin-bottom:9px}.vision-review-hero aside span{color:#bdc9e8;font-size:13px}
+.vision-review-context,.vision-review-compare,.vision-review-materials{padding:110px 0}
+.vision-review-heading{grid-column:2/span 4}.vision-review-heading h2{font-size:38px;font-weight:600;letter-spacing:-.04em;line-height:1.32;margin:22px 0 0}
+.vision-review-body{grid-column:7/span 6}.vision-review-body>p{color:var(--muted);font-size:17px;line-height:1.82;margin:0}.vision-review-body>p+p{margin-top:18px}
+.vision-review-options{background:var(--paper);padding:110px 0}.vision-review-options .a2-grid{grid-template-columns:repeat(3,1fr)}
+.vision-review-options article{background:#fff;border-top:4px solid var(--blue);display:flex;flex-direction:column;min-height:510px;padding:38px}
+.vision-review-options article+article{border-left:1px solid var(--line)}
+.vision-review-options article>span{color:var(--blue);font-size:12px;font-weight:700}.vision-review-options h2{font-size:29px;font-weight:600;letter-spacing:-.035em;line-height:1.4;margin:42px 0 20px}
+.vision-review-options p{color:var(--muted);font-size:15px;line-height:1.78;margin:0}.vision-review-options ul{display:flex;flex-wrap:wrap;gap:7px;list-style:none;margin:30px 0 0;padding:0}.vision-review-options li{background:var(--blue-soft);color:var(--blue);font-size:12px;font-weight:600;padding:7px 9px}.vision-review-options small{border-top:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.6;margin-top:auto;padding-top:22px}
+.vision-review-table{grid-column:7/span 6}.vision-review-table>div{border-top:1px solid var(--line);display:grid;gap:15px;grid-template-columns:55px 1.4fr 1.2fr 1.5fr;padding:24px 0}.vision-review-table>div:last-child{border-bottom:1px solid var(--line)}.vision-review-table strong{color:var(--blue)}.vision-review-table span{color:var(--muted);font-size:14px}
+.vision-review-materials{background:var(--paper)}.vision-review-materials ul{list-style:none;margin:0;padding:0}.vision-review-materials li{align-items:start;border-top:1px solid var(--line);display:grid;gap:25px;grid-template-columns:1.1fr 1.9fr;padding:20px 0}.vision-review-materials li:last-child{border-bottom:1px solid var(--line)}.vision-review-materials li span{color:var(--muted);font-size:14px}
+.vision-review-decision{background:var(--blue-deep);color:#fff;padding:100px 0}.vision-review-decision .a2-grid>div{grid-column:2/span 4}.vision-review-decision .eyebrow{color:#9eb2e4}.vision-review-decision h2{font-size:38px;font-weight:600;line-height:1.35;margin:22px 0 0}.vision-review-decision ol{grid-column:7/span 6;margin:0;padding-left:22px}.vision-review-decision li{border-top:1px solid rgba(255,255,255,.18);color:#d4dcf0;font-size:16px;line-height:1.7;padding:17px 0 17px 8px}.vision-review-decision li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
+@media(max-width:1100px){.vision-review-hero .a2-grid>div{grid-column:1/span 8}.vision-review-hero aside{grid-column:10/span 3}.vision-review-heading{grid-column:1/span 4}.vision-review-body,.vision-review-table{grid-column:6/span 7}.vision-review-decision .a2-grid>div{grid-column:1/span 4}.vision-review-decision ol{grid-column:6/span 7}}
+@media(max-width:760px){.vision-review-back{display:inline-flex;grid-column:4/span 3;font-size:12px}.vision-review-hero{padding:135px 0 75px}.vision-review-hero .a2-grid>div,.vision-review-hero aside,.vision-review-heading,.vision-review-body,.vision-review-table,.vision-review-decision .a2-grid>div,.vision-review-decision ol{grid-column:1/span 6}.vision-review-hero h1{font-size:40px}.vision-review-hero p{font-size:16px}.vision-review-hero aside{margin-top:38px}.vision-review-context,.vision-review-compare,.vision-review-materials{padding:75px 0}.vision-review-heading h2,.vision-review-decision h2{font-size:31px}.vision-review-body,.vision-review-table{margin-top:35px}.vision-review-options{padding:75px 0}.vision-review-options .a2-grid{grid-template-columns:1fr}.vision-review-options article{min-height:440px;padding:30px}.vision-review-options article+article{border-left:0;border-top-width:1px}.vision-review-table>div{grid-template-columns:50px 1fr}.vision-review-table span{grid-column:2}.vision-review-materials li{grid-template-columns:1fr;gap:5px}.vision-review-decision{padding:75px 0}.vision-review-decision ol{margin-top:35px}}
