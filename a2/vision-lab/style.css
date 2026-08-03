@@ -271,3 +271,22 @@
   .vision-internal-summary{padding:70px 0}.vision-internal-summary>div>div,.vision-internal-summary>div>p,.vision-internal-summary a{grid-column:1/span 6}.vision-internal-summary>div>p{margin-top:28px}.vision-internal-summary a{margin-top:22px;text-align:left}
   .vision-internal-banner strong,.vision-internal-banner p{grid-column:1/span 6}.vision-internal-banner p{margin-top:7px}
 }
+
+/* Vision Lab v6: clean production-like page previews */
+.vision-lab .a2-subhero{padding-block:200px 100px}
+.vision-about-nav{top:68px}
+.vision-preview-index{background:linear-gradient(180deg,#fff,#f4f7fd);min-height:100vh;padding:210px 0 110px}
+.vision-preview-index-copy{grid-column:3/span 7}
+.vision-preview-index-copy h1{font-size:48px;font-weight:600;letter-spacing:-.04em;margin:25px 0 15px}
+.vision-preview-index-copy p{color:var(--muted);font-size:17px;margin:0}
+.vision-preview-links{display:grid;gap:18px;grid-column:3/span 10;grid-template-columns:1fr 1fr;margin-top:70px}
+.vision-preview-links a{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;min-height:260px;padding:34px}
+.vision-preview-links small{color:var(--blue);font-size:11px;font-weight:700;letter-spacing:.11em}
+.vision-preview-links strong{font-size:26px;font-weight:600;line-height:1.45;margin-top:45px}
+.vision-preview-links span{color:var(--blue);font-size:13px;font-weight:600;margin-top:auto}
+@media(max-width:1199px){.vision-preview-index-copy,.vision-preview-links{grid-column:2/span 10}}
+@media(max-width:760px){
+  .vision-lab .a2-subhero{padding-block:130px 70px}
+  .vision-about-nav{top:68px}
+  .vision-preview-index{padding:145px 0 80px}.vision-preview-index-copy,.vision-preview-links{grid-column:1/span 6}.vision-preview-index-copy h1{font-size:36px}.vision-preview-links{grid-template-columns:1fr;margin-top:45px}.vision-preview-links a{min-height:220px;padding:28px}
+}
