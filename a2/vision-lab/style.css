@@ -348,3 +348,9 @@
   .vision-expertise-scope span{padding-block:7px}
   .vision-lab .a2-cta{padding-block:64px}
 }
+
+/* Image-light company page */
+.vision-expertise-head{grid-column:3/span 8;padding-right:0}
+.vision-expertise-head>p{max-width:700px}
+@media(max-width:1199px){.vision-expertise-head{grid-column:2/span 9}}
+@media(max-width:760px){.vision-expertise-head{grid-column:1/span 6}}
