@@ -1,0 +1,6 @@
+Asset: hero-open-ocean-aerial.jpg
+Source: Pexels
+Photo: https://www.pexels.com/photo/aerial-shot-of-a-blue-ocean-15305602/
+Photographer: Diego F. Parra
+License: https://www.pexels.com/license/
+Usage note: Generic open-ocean concept image. It is not a Dacom Crossing facility, Taean location, or submarine-cable photograph.
