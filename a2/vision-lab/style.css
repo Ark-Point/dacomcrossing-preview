@@ -319,3 +319,25 @@
   .vision-expertise-media{margin-top:40px}.vision-expertise-media img{height:280px}
   .vision-expertise-list{margin-top:50px}.vision-expertise-list article{align-items:start;gap:11px 16px;grid-template-columns:36px 1fr;padding:27px 0}.vision-expertise-list article>p,.vision-expertise-list ul{grid-column:2}.vision-expertise-list ul{justify-content:flex-start}.vision-expertise-title h3{font-size:19px}
 }
+
+/* Vision Lab v8: complete dark operating-expertise system */
+.vision-expertise{background:var(--blue-night);color:#fff}
+.vision-expertise .eyebrow{color:#fff}
+.vision-expertise-head h2{color:#fff}
+.vision-expertise-head>p{color:#b5c2df}
+.vision-expertise-media{border:1px solid rgba(255,255,255,.16)}
+.vision-expertise-media figcaption{background:#0b255e;border-top:1px solid rgba(255,255,255,.12)}
+.vision-expertise-media figcaption span{color:#aebde0}
+.vision-expertise-list article{border-top-color:rgba(255,255,255,.2)}.vision-expertise-list article:last-child{border-bottom-color:rgba(255,255,255,.2)}
+.vision-expertise-no{color:#7189c0}
+.vision-expertise-title small{color:#8eabf2}
+.vision-expertise-title h3{color:#fff}
+.vision-expertise-list article>p{color:#b5c2df}
+.vision-expertise-scope{border-left:1px solid rgba(255,255,255,.18);display:grid;padding-left:22px}
+.vision-expertise-scope span{border-top:1px solid rgba(255,255,255,.14);color:#fff;font-size:12px;line-height:1.45;padding:8px 0 8px 17px;position:relative}
+.vision-expertise-scope span:first-child{border-top:0}
+.vision-expertise-scope span:before{background:var(--pink);content:"";height:1px;left:0;position:absolute;top:15px;width:8px}
+@media(max-width:760px){
+  .vision-expertise-scope{border-left:0;grid-column:2;padding:6px 0 0}
+  .vision-expertise-scope span{padding-block:7px}
+}
