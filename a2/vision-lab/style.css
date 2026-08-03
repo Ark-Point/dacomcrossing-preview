@@ -94,3 +94,57 @@
   .vision-gateway-flow{grid-column:1/span 6;grid-template-columns:1fr 1fr;margin-top:45px}.vision-gateway-flow article{min-height:190px;padding:22px}.vision-gateway-flow strong{font-size:16px;margin-top:50px}
   .vision-close span,.vision-close h2,.vision-close a{grid-column:1/span 6}.vision-close h2{font-size:30px;margin-top:24px}.vision-close a{margin-top:30px}
 }
+
+/* Full company-introduction composition */
+.vision-about-nav{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:116px;z-index:70}
+.vision-about-nav-inner{display:grid;grid-column:3/span 10;grid-template-columns:repeat(3,144px)}
+.vision-about-nav a{align-items:center;border-bottom:3px solid transparent;display:flex;font-size:13px;font-weight:600;justify-content:center;padding:16px 10px}
+.vision-about-nav a:hover,.vision-about-nav a:focus-visible{border-color:var(--pink);color:var(--blue)}
+.vision-history{background:#fff}
+.vision-history .a2-history-compact{margin-top:62px}
+.vision-organization{background:var(--paper);padding:120px 0}
+.vision-organization>.a2-grid{align-items:start}
+.vision-organization .a2-side-note{align-self:end}
+.vision-org-chart{grid-column:3/span 10;margin-top:72px}
+.vision-org-leadership{display:grid;gap:18px;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 auto;max-width:700px}
+.vision-org-leadership article{background:var(--blue-deep);color:#fff;min-height:150px;padding:28px;text-align:center}
+.vision-org-leadership article:last-child{background:var(--blue)}
+.vision-org-leadership small,.vision-org-units small{display:block;font-size:10px;font-weight:700;letter-spacing:.12em}
+.vision-org-leadership small{color:#aebde4}
+.vision-org-leadership h3{font-size:22px;font-weight:600;margin:14px 0 5px}
+.vision-org-leadership p{color:#ccd6ef;font-size:13px;margin:0}
+.vision-org-line{height:58px;margin:0 auto;position:relative;width:76%}
+.vision-org-line:before{background:var(--blue);content:"";height:58px;left:50%;position:absolute;top:0;width:1px}
+.vision-org-line:after{background:var(--blue);bottom:0;content:"";height:1px;left:0;position:absolute;right:0}
+.vision-org-units{display:grid;gap:16px;grid-template-columns:repeat(4,minmax(0,1fr))}
+.vision-org-units article{background:#fff;border:1px solid var(--line);min-height:335px;padding:28px;position:relative}
+.vision-org-units article:before{background:var(--blue);content:"";height:18px;left:50%;position:absolute;top:-18px;width:1px}
+.vision-org-units small{color:var(--blue)}
+.vision-org-units h3{font-size:22px;font-weight:600;margin:18px 0 10px}
+.vision-org-units p{color:var(--muted);font-size:14px;line-height:1.65;margin:0}
+.vision-org-units ul{border-top:1px solid var(--line);list-style:none;margin:24px 0 0;padding:17px 0 0}
+.vision-org-units li{color:var(--ink);font-size:13px;line-height:1.55;padding:5px 0 5px 16px;position:relative}
+.vision-org-units li:before{background:var(--pink);content:"";height:1px;left:0;position:absolute;top:15px;width:8px}
+@media(max-width:1199px){
+  .vision-about-nav-inner,.vision-org-chart{grid-column:2/span 10}
+  .vision-org-units{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .vision-org-line{display:none}
+  .vision-org-units article:before{display:none}
+  .vision-org-units article{min-height:300px}
+  .vision-org-units{margin-top:18px}
+}
+@media(max-width:760px){
+  .vision-about-nav{top:112px}
+  .vision-about-nav-inner{grid-column:1/span 6;grid-template-columns:repeat(3,minmax(0,1fr))}
+  .vision-about-nav a{font-size:12px;padding:13px 4px}
+  .vision-history .a2-history-compact{margin-top:42px}
+  .vision-organization{padding:80px 0}
+  .vision-organization .a2-side-note{margin-top:24px}
+  .vision-org-chart{grid-column:1/span 6;margin-top:48px}
+  .vision-org-leadership{gap:10px;grid-template-columns:1fr 1fr}
+  .vision-org-leadership article{min-height:145px;padding:22px 14px}
+  .vision-org-leadership h3{font-size:19px}
+  .vision-org-leadership p{font-size:12px;line-height:1.5}
+  .vision-org-units{grid-template-columns:1fr;margin-top:12px}
+  .vision-org-units article{min-height:0;padding:25px}
+}
