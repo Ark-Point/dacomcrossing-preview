@@ -216,3 +216,17 @@
   .vision-leadership-strip{grid-template-columns:1fr;margin-top:45px}.vision-leadership-strip>div{grid-template-columns:1fr;min-height:125px;padding:25px}.vision-leadership-strip span{text-align:left}
   .vision-team-list article{align-items:start;gap:11px 16px;grid-template-columns:36px 1fr;padding:27px 0}.vision-team-list article>p,.vision-team-list ul{grid-column:2}.vision-team-list ul{justify-content:flex-start}.vision-team-title h3{font-size:20px}
 }
+
+/* Vision Lab v4: one visual system for content-only comparison */
+.vision-option-card.option-b:before{background:var(--blue)}
+.vision-option-card.option-b small{color:var(--blue)}
+.vision-option-card.option-b li{background:var(--blue-soft);color:var(--blue)}
+.option-b .vision-view{background:var(--blue-deep)}
+.vision-feature-b .vision-feature-copy blockquote small{color:var(--blue)}
+.vision-feature-b .vision-feature-media figcaption{background:var(--blue-deep)}
+.vision-feature-b .vision-feature-media figcaption span{color:#bdc9e8}
+.vision-feature-b .vision-principles article{border-top-color:var(--blue)}
+.vision-feature-b .vision-principles article>small{color:var(--blue)}
+.vision-feature-b .vision-proof-rail{background:var(--blue-deep)}
+.vision-feature-b .vision-proof-rail small{color:#8ea7e4}
+@media(max-width:760px){.vision-feature-b .vision-principles article+article{border-top-color:var(--line)}}
