@@ -1,0 +1,6 @@
+Asset: vision-underwater-light.jpg
+Source: Pexels
+Photo: https://www.pexels.com/photo/underwater-photography-of-ocean-2397651/
+Photographer: Jeremy Bishop
+License: https://www.pexels.com/license/
+Usage note: Generic underwater concept image for the Vision section. It is not a Dacom Crossing facility or submarine-cable photograph.
