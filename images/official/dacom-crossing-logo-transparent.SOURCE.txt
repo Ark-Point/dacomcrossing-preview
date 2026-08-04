@@ -1,0 +1,4 @@
+Asset: dacom-crossing-logo-transparent.png
+Derived from: dacom-crossing-logo-client.jpg (client-supplied official logo)
+Modification: Removed only the white JPEG background and preserved the supplied logo geometry and colors.
+Usage: Transparent header treatment on dark and light backgrounds.

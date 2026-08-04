@@ -534,3 +534,20 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   .a2-vm-list h3{font-size:24px;line-height:34px}
   .a2-vm-list p{font-size:16px;line-height:25px}
 }
+
+
+/* Home overlay header: transparent over Hero, solid after scroll */
+.a2-header--overlay{transition:background-color .24s,border-color .24s,color .24s,height .2s,box-shadow .2s}
+.a2-header--overlay .a2-logo img{transition:filter .24s}
+.a2-header--overlay:not(.is-compact):not(.menu-open){background:transparent;border-bottom-color:transparent;box-shadow:none}
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-logo img{filter:brightness(0) invert(1)}
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-nav a,
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-language,
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-menu{color:#fff}
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-nav a:after{background:#fff}
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-header-cta{border-color:rgba(255,255,255,.78);color:#fff}
+.a2-header--overlay:not(.is-compact):not(.menu-open) .a2-header-cta:hover{background:#fff;border-color:#fff;color:var(--blue-deep)}
+
+@media(max-width:760px){
+  .a2-header.menu-open .a2-header-grid{height:68px}
+}
