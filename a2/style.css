@@ -473,3 +473,37 @@ body{overflow-x:clip}.a2-shell{overflow:visible}
   html[lang="en"] .a2-localnav-inner{display:flex;gap:24px;justify-content:flex-start;overflow-x:auto;width:100%}
   html[lang="en"] .a2-localnav a{flex:0 0 auto;padding-inline:0;white-space:nowrap}
 }
+
+
+/* Meeting direction: full-bleed underwater Vision hero */
+.a2-hero--vision{background:#06183f;color:#fff;min-height:100svh;overflow:hidden;padding-top:100px;position:relative}
+.a2-hero--vision:after{display:none}
+.a2-hero-media,.a2-hero-shade{inset:0;position:absolute}
+.a2-hero-media img{height:100%;max-width:none;object-fit:cover;object-position:center 42%;width:100%}
+.a2-hero-shade{background:linear-gradient(90deg,rgba(3,16,42,.74) 0%,rgba(3,16,42,.48) 46%,rgba(3,16,42,.12) 78%),linear-gradient(180deg,rgba(2,15,38,.08),rgba(2,15,38,.26))}
+.a2-hero--vision .a2-hero-grid{align-items:center;min-height:calc(100svh - 100px);padding-block:72px;position:relative;z-index:2}
+.a2-hero--vision .a2-hero-copy{grid-column:3/span 7;max-width:850px;padding:0;text-shadow:0 2px 24px rgba(2,15,38,.18)}
+.a2-hero--vision .eyebrow{color:#fff}
+.a2-hero--vision h1{font-size:clamp(44px,4.6vw,68px);font-weight:600;letter-spacing:-.025em;line-height:1.14;margin:26px 0}
+.a2-hero--vision h1 em{color:#fff;font-style:normal}
+.a2-hero--vision .a2-hero-lead{color:rgba(255,255,255,.88);font-size:17px;line-height:28px;max-width:680px}
+.a2-hero--vision .a2-button{background:#fff;border-color:#fff;color:var(--blue-deep);text-shadow:none}
+.a2-hero--vision .a2-button:hover{background:var(--pink);border-color:var(--pink);color:#fff}
+.a2-hero--vision .a2-button.secondary{background:transparent;border-color:rgba(255,255,255,.72);color:#fff}
+.a2-hero--vision .a2-button.secondary:hover{background:rgba(255,255,255,.14);border-color:#fff}
+.a2-proof-band{background:#fff}
+.a2-proof-band .a2-proof-strip{padding-block:38px}
+.a2-proof-band .a2-proof-grid{border-bottom:1px solid var(--line);box-shadow:none}
+@media(max-width:1199px){
+  .a2-hero--vision .a2-hero-copy{grid-column:2/span 8}
+}
+@media(max-width:760px){
+  .a2-hero--vision{min-height:100svh;padding-top:68px}
+  .a2-hero--vision .a2-hero-grid{min-height:calc(100svh - 68px);padding-block:46px}
+  .a2-hero--vision .a2-hero-copy{grid-column:1/span 6;max-width:none}
+  .a2-hero--vision h1{font-size:38px;letter-spacing:-.02em;line-height:48px;margin:20px 0}
+  .a2-hero--vision .a2-hero-lead{font-size:16px;line-height:25px}
+  .a2-hero--vision .a2-actions{margin-top:28px}
+  .a2-hero-shade{background:linear-gradient(90deg,rgba(3,16,42,.72),rgba(3,16,42,.34)),linear-gradient(180deg,rgba(2,15,38,.08),rgba(2,15,38,.34))}
+  .a2-proof-band .a2-proof-strip{padding-block:24px}
+}
